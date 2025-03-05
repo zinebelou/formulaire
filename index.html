@@ -58,7 +58,7 @@
     <h1>ENQUÊTE DE SATISFACTION</h1>
     <p>Merci pour votre participation à notre événement ! Merci de prendre quelques minutes pour répondre à cette enquête, pour nous aider à améliorer la qualité de nos services.</p>
 
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <form action="https://formspree.io/f/myzkrrdr" method="POST">
         <fieldset class="question">
             <legend>1. Âge :</legend>
             <input type="radio" name="age" value="18-20" required> 18-20 ans<br>
@@ -140,3 +140,27 @@
         <fieldset class="question">
             <legend>11. Avez-vous déjà tenté de réduire votre temps passé sur les réseaux sociaux pour améliorer votre productivité ?</legend>
             <input type="radio" name="reduction-temps" value="success" required> Oui, avec succès<br>
+            <input type="radio" name="reduction-temps" value="sans-success" required> Oui, sans succès<br>
+            <input type="radio" name="reduction-temps" value="non" required> Non
+        </fieldset>
+
+        <fieldset class="question">
+            <legend>12. Selon vous, quelles seraient les meilleures solutions pour limiter l'impact négatif des réseaux sociaux sur la productivité ?</legend>
+            <textarea name="solutions" rows="4" cols="50" placeholder="Écrivez vos réponses ici..."></textarea>
+        </fieldset>
+
+        <fieldset class="question">
+            <legend>13. Souhaitez-vous ajouter un commentaire ou une remarque sur ce sujet ?</legend>
+            <textarea name="commentaire" rows="4" cols="50" placeholder="Écrivez vos commentaires ici..."></textarea>
+        </fieldset>
+
+        <button type="submit">Soumettre</button>
+    </form>
+
+    <script>
+        function submitForm() {
+            alert('Merci pour vos réponses !');
+        }
+    </script>
+</body>
+</html>
