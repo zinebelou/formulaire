@@ -58,109 +58,85 @@
     <h1>ENQUÊTE DE SATISFACTION</h1>
     <p>Merci pour votre participation à notre événement ! Merci de prendre quelques minutes pour répondre à cette enquête, pour nous aider à améliorer la qualité de nos services.</p>
 
-    <form action="https://formspree.io/f/myzkrrdr" method="POST">
-        <div class="question">
-            <label for="age">1. Âge :</label><br>
-            <input type="radio" name="age" value="18-20"> 18-20 ans<br>
-            <input type="radio" name="age" value="21-23"> 21-23 ans<br>
-            <input type="radio" name="age" value="24+"> 24 ans et plus
-        </div>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <fieldset class="question">
+            <legend>1. Âge :</legend>
+            <input type="radio" name="age" value="18-20" required> 18-20 ans<br>
+            <input type="radio" name="age" value="21-23" required> 21-23 ans<br>
+            <input type="radio" name="age" value="24+" required> 24 ans et plus
+        </fieldset>
 
-        <div class="question">
-            <label for="sexe">2. Sexe :</label><br>
-            <input type="radio" name="sexe" value="homme"> Homme<br>
-            <input type="radio" name="sexe" value="femme"> Femme
-        </div>
+        <fieldset class="question">
+            <legend>2. Sexe :</legend>
+            <input type="radio" name="sexe" value="homme" required> Homme<br>
+            <input type="radio" name="sexe" value="femme" required> Femme
+        </fieldset>
 
-        <div class="question">
-            <label for="niveau-etudes">3. Niveau d'études :</label><br>
-            <input type="radio" name="niveau-etudes" value="licence"> Licence<br>
-            <input type="radio" name="niveau-etudes" value="master"> Master<br>
-            <input type="radio" name="niveau-etudes" value="doctorat"> Doctorat<br>
-            <input type="radio" name="niveau-etudes" value="autre"> Autre
-        </div>
+        <fieldset class="question">
+            <legend>3. Niveau d'études :</legend>
+            <input type="radio" name="niveau-etudes" value="licence" required> Licence<br>
+            <input type="radio" name="niveau-etudes" value="master" required> Master<br>
+            <input type="radio" name="niveau-etudes" value="doctorat" required> Doctorat<br>
+            <input type="radio" name="niveau-etudes" value="autre" required> Autre
+        </fieldset>
 
-        <div class="question">
-            <label for="reseaux-sociaux">4. Quels réseaux sociaux utilisez-vous régulièrement ?</label><br>
+        <fieldset class="question">
+            <legend>4. Quels réseaux sociaux utilisez-vous régulièrement ?</legend>
             <input type="checkbox" name="reseaux-sociaux" value="facebook"> Facebook<br>
             <input type="checkbox" name="reseaux-sociaux" value="instagram"> Instagram<br>
             <input type="checkbox" name="reseaux-sociaux" value="snapchat"> Snapchat<br>
             <input type="checkbox" name="reseaux-sociaux" value="tiktok"> TikTok<br>
             <input type="checkbox" name="reseaux-sociaux" value="linkedin"> LinkedIn<br>
             <input type="checkbox" name="reseaux-sociaux" value="autre"> Autre
-        </div>
+        </fieldset>
 
-        <div class="question">
-            <label for="temps-reseaux-sociaux">5. En moyenne, combien de temps passez-vous sur les réseaux sociaux par jour ?</label><br>
-            <input type="radio" name="temps-reseaux-sociaux" value="moins-1h"> Moins de 1h<br>
-            <input type="radio" name="temps-reseaux-sociaux" value="1-2h"> 1-2h<br>
-            <input type="radio" name="temps-reseaux-sociaux" value="3-4h"> 3-4h<br>
-            <input type="radio" name="temps-reseaux-sociaux" value="plus-4h"> Plus de 4h
-        </div>
+        <fieldset class="question">
+            <legend>5. En moyenne, combien de temps passez-vous sur les réseaux sociaux par jour ?</legend>
+            <input type="radio" name="temps-reseaux-sociaux" value="moins-1h" required> Moins de 1h<br>
+            <input type="radio" name="temps-reseaux-sociaux" value="1-2h" required> 1-2h<br>
+            <input type="radio" name="temps-reseaux-sociaux" value="3-4h" required> 3-4h<br>
+            <input type="radio" name="temps-reseaux-sociaux" value="plus-4h" required> Plus de 4h
+        </fieldset>
 
-        <div class="question">
-            <label for="moment-reseaux-sociaux">6. Quand utilisez-vous principalement les réseaux sociaux ?</label><br>
-            <input type="radio" name="moment-reseaux-sociaux" value="matin"> Le matin<br>
-            <input type="radio" name="moment-reseaux-sociaux" value="pendant-cours"> Pendant les cours<br>
-            <input type="radio" name="moment-reseaux-sociaux" value="pendant-pauses"> Pendant les pauses<br>
-            <input type="radio" name="moment-reseaux-sociaux" value="soir"> Le soir
-        </div>
+        <fieldset class="question">
+            <legend>6. Quand utilisez-vous principalement les réseaux sociaux ?</legend>
+            <input type="radio" name="moment-reseaux-sociaux" value="matin" required> Le matin<br>
+            <input type="radio" name="moment-reseaux-sociaux" value="pendant-cours" required> Pendant les cours<br>
+            <input type="radio" name="moment-reseaux-sociaux" value="pendant-pauses" required> Pendant les pauses<br>
+            <input type="radio" name="moment-reseaux-sociaux" value="soir" required> Le soir
+        </fieldset>
 
-        <div class="question">
-            <label for="utilisation-educative">7. Utilisez-vous les réseaux sociaux à des fins éducatives ?</label><br>
-            <input type="radio" name="utilisation-educative" value="frequent"> Oui, fréquemment<br>
-            <input type="radio" name="utilisation-educative" value="parfois"> Parfois<br>
-            <input type="radio" name="utilisation-educative" value="rarement"> Rarement<br>
-            <input type="radio" name="utilisation-educative" value="jamais"> Jamais
-        </div>
+        <fieldset class="question">
+            <legend>7. Utilisez-vous les réseaux sociaux à des fins éducatives ?</legend>
+            <input type="radio" name="utilisation-educative" value="frequent" required> Oui, fréquemment<br>
+            <input type="radio" name="utilisation-educative" value="parfois" required> Parfois<br>
+            <input type="radio" name="utilisation-educative" value="rarement" required> Rarement<br>
+            <input type="radio" name="utilisation-educative" value="jamais" required> Jamais
+        </fieldset>
 
-        <div class="question">
-            <label for="concentration">8. Pensez-vous que l'utilisation des réseaux sociaux affecte votre concentration pendant les études ?</label><br>
-            <input type="radio" name="concentration" value="negatif"> Oui, négativement<br>
-            <input type="radio" name="concentration" value="positif"> Oui, positivement<br>
-            <input type="radio" name="concentration" value="aucun"> Non, pas du tout
-        </div>
+        <fieldset class="question">
+            <legend>8. Pensez-vous que l'utilisation des réseaux sociaux affecte votre concentration pendant les études ?</legend>
+            <input type="radio" name="concentration" value="negatif" required> Oui, négativement<br>
+            <input type="radio" name="concentration" value="positif" required> Oui, positivement<br>
+            <input type="radio" name="concentration" value="aucun" required> Non, pas du tout
+        </fieldset>
 
-        <div class="question">
-            <label for="interruption">9. Avez-vous déjà interrompu une tâche académique pour aller sur les réseaux sociaux ?</label><br>
-            <input type="radio" name="interruption" value="souvent"> Oui, souvent<br>
-            <input type="radio" name="interruption" value="parfois"> Parfois<br>
-            <input type="radio" name="interruption" value="rarement"> Rarement<br>
-            <input type="radio" name="interruption" value="jamais"> Jamais
-        </div>
+        <fieldset class="question">
+            <legend>9. Avez-vous déjà interrompu une tâche académique pour aller sur les réseaux sociaux ?</legend>
+            <input type="radio" name="interruption" value="souvent" required> Oui, souvent<br>
+            <input type="radio" name="interruption" value="parfois" required> Parfois<br>
+            <input type="radio" name="interruption" value="rarement" required> Rarement<br>
+            <input type="radio" name="interruption" value="jamais" required> Jamais
+        </fieldset>
 
-        <div class="question">
-            <label for="organisation">10. Utilisez-vous les réseaux sociaux pour organiser votre travail (groupes d'étude, partage de ressources) ?</label><br>
-            <input type="radio" name="organisation" value="souvent"> Oui, souvent<br>
-            <input type="radio" name="organisation" value="parfois"> Parfois<br>
-            <input type="radio" name="organisation" value="rarement"> Rarement<br>
-            <input type="radio" name="organisation" value="jamais"> Jamais
-        </div>
+        <fieldset class="question">
+            <legend>10. Utilisez-vous les réseaux sociaux pour organiser votre travail (groupes d'étude, partage de ressources) ?</legend>
+            <input type="radio" name="organisation" value="souvent" required> Oui, souvent<br>
+            <input type="radio" name="organisation" value="parfois" required> Parfois<br>
+            <input type="radio" name="organisation" value="rarement" required> Rarement<br>
+            <input type="radio" name="organisation" value="jamais" required> Jamais
+        </fieldset>
 
-        <div class="question">
-            <label for="reduction-temps">11. Avez-vous déjà tenté de réduire votre temps passé sur les réseaux sociaux pour améliorer votre productivité ?</label><br>
-            <input type="radio" name="reduction-temps" value="success"> Oui, avec succès<br>
-            <input type="radio" name="reduction-temps" value="sans-success"> Oui, sans succès<br>
-            <input type="radio" name="reduction-temps" value="non"> Non
-        </div>
-
-        <div class="question">
-            <label for="solutions">12. Selon vous, quelles seraient les meilleures solutions pour limiter l'impact négatif des réseaux sociaux sur la productivité ?</label><br>
-            <textarea name="solutions" rows="4" cols="50" placeholder="Écrivez vos réponses ici..."></textarea>
-        </div>
-
-        <div class="question">
-            <label for="commentaire">13. Souhaitez-vous ajouter un commentaire ou une remarque sur ce sujet ?</label><br>
-            <textarea name="commentaire" rows="4" cols="50" placeholder="Écrivez vos commentaires ici..."></textarea>
-        </div>
-
-        <button type="submit">Soumettre</button>
-    </form>
-
-    <script>
-        function submitForm() {
-            alert('Merci pour vos réponses !');
-        }
-    </script>
-</body>
-</html>
+        <fieldset class="question">
+            <legend>11. Avez-vous déjà tenté de réduire votre temps passé sur les réseaux sociaux pour améliorer votre productivité ?</legend>
+            <input type="radio" name="reduction-temps" value="success" required> Oui, avec succès<br>
